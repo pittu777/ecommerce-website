@@ -1,57 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap");
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #fdf5eb;
+  background-color: #fdf5eb;
 }
 
-.heading{
+.heading {
   font-family: "Sanchez", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.2rem;
 
-  background-color: #E7B3CC;
-
-
+  background-color: #e7b3cc;
 }
-.heading_div{
+.heading_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7b3cc;
+  height: auto;
+  max-width:100%;
+}
+
+@media (max-width: 991.98px) {
+  .heading {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+
+    background-color: #e7b3cc;
+  }
+  .heading_div {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #E7B3CC;
+    background-color: #e7b3cc;
     height: auto;
-    width: 1536px;
+    max-width: 100%;
+  }
 }
 
-@media (max-width: 600px) {
-    .heading {
-      font-size: 1rem; 
-      padding: 10px; 
-    }
-  
-    .heading_div {
-      width: 100%; 
-      flex-direction: column; 
-      padding: 10px; 
-    }
+@media (max-width: 767.98px) {
+  .heading {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+
+    background-color: #e7b3cc;
   }
-  
-  
-  @media (min-width: 601px) and (max-width: 1024px) {
-    .heading {
-      font-size: 1rem; 
-      padding: 15px; 
-    }
-  
-    .heading_div {
-      width:100%; 
-      flex-direction: row; 
-      padding: 15px; 
-    }
+  .heading_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7b3cc;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .heading {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+
+    background-color: #e7b3cc;
+  }
+  .heading_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7b3cc;
+    height: auto;
+    max-width: 100%;
+  }
 }
