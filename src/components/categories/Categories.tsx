@@ -13,7 +13,6 @@ import offer2 from "./../../assets/offer2.png";
 import offer3 from "./../../assets/offer3.png";
 import Hero from '../hero/Hero';
 import Footer from '../footer/Footer';
-import Footer2 from '../footer/Footer2';
 
 
 const Categories: React.FC = () => {
