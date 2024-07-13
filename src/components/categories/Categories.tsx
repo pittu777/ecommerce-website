@@ -58,7 +58,7 @@ const Categories: React.FC = () => {
               {renderStars(index<1?5:4)}
               <p>some paragraph</p>
               <p>price: ₹2222</p><p>removed price</p>
-              <button type="button" className="btn btn-primary btn-sm">Add to cart</button>
+              <button type="button" className="btn btn-primary btn-sm " style={{backgroundColor:"#D0ACAC", border:"none"}}>Add to cart</button>
             </li>
           ))}
         </ul>

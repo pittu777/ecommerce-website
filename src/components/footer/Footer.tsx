@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           <p>Join newsletter to know about new releases and latest offers</p>
           <div className={style.newsletter_container}>
             <input type="text" placeholder='Enter your email' />
-            <button>Subscribe</button>
+            <button className={style.button}>Subscribe</button>
           </div>
         </div>
         <div className={style.links_container}>
