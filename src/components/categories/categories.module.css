@@ -25,11 +25,16 @@
   margin: 10px;
 }
 
+.img{
+  border-radius: 10px;
+}
+
 .categoryImage {
   width: 100%;
   height: auto;
   max-width: 100px;
   border-radius: 50%;
+  
 }
 
 .card {
@@ -38,6 +43,7 @@
   margin: auto;
   text-align: center;
   font-family: arial;
+  
 }
 
 .price {

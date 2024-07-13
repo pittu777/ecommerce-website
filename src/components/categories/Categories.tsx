@@ -13,12 +13,13 @@ import offer2 from "./../../assets/offer2.png";
 import offer3 from "./../../assets/offer3.png";
 import Hero from '../hero/Hero';
 import Footer from '../footer/Footer';
+import Footer2 from '../footer/Footer2';
 
 
 const Categories: React.FC = () => {
 
-  const categories: string[] = [img1, img2, img3, img4];
-  const sellers: string[] = [img5, img6, img7];
+  const categories: string[] = [img1, img2, img3, img4,img1, img2, img3, img4,img1, img2, img3, img4,];
+  const sellers: string[] = [img5, img6, img7,img5, img6, img7,img5, img6, img7,img5, img6, img7,img5, img6, img7,img5, img6, img7,];
 
   const renderStars = (count: number) => {
     return (
@@ -54,11 +55,11 @@ const Categories: React.FC = () => {
         <ul className={styles.imageList}>
           {sellers.map((category, index) => (
             <li key={index}>
-              <img src={category} alt={`Category ${index + 1}`} width={100} height={100} />
+              <img className={styles.img} src={category} alt={`Category ${index + 1}`} width={100} height={100} />
               {renderStars(index<1?5:4)}
               <p>some paragraph</p>
               <p>price: ₹2222</p><p>removed price</p>
-              <button>Add to cart</button>
+              <button type="button" className="btn btn-primary btn-sm">Add to cart</button>
             </li>
           ))}
         </ul>
@@ -92,7 +93,7 @@ const Categories: React.FC = () => {
         <ul className={styles.imageList}>
           {sellers.map((category, index) => (
             <li key={index}>
-              <img src={category} alt={`Category ${index + 1}`} width={100} height={100} />
+              <img className={styles.img} src={category} alt={`Category ${index + 1}`} width={100} height={100} />
             </li>
           ))}
         </ul>
@@ -101,6 +102,7 @@ const Categories: React.FC = () => {
         <span className={styles.heading}>About Us</span>
       </div>
       <Footer />
+      {/* <Footer2/> */}
     </>
   );
 };
