@@ -87,6 +87,7 @@
   }
 
   .nav.responsive_nav {
+    z-index: 1;
     display: flex;
     margin-top: 38px;
   }

@@ -2,7 +2,7 @@
 import React from 'react'
 import img from "./../../../assets/Raja_s_Chanab_16x20-removebg-preview 2.png"
 import styles from "./logo.module.css"
-const Logo :React.FC = () => {
+const Logo : React.FC = () => {
     
   return (
     <div className={styles.logoContainer}>

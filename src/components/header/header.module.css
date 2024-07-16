@@ -15,7 +15,6 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 1.2rem;
-
   background-color: #e7b3cc;
 }
 .heading_div {
@@ -33,7 +32,6 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 1.2rem;
-
     background-color: #e7b3cc;
   }
   .heading_div {
@@ -70,7 +68,7 @@ body {
     font-family: "Sanchez", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
 
     background-color: #e7b3cc;
   }

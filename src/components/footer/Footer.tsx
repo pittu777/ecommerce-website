@@ -10,7 +10,7 @@ import Logo from '../nav-bar/Logo/Logo';
 const Footer: React.FC = () => {
   return (
     <>
-      <div>
+      <div className={styles.heading_div}>
         <img className={styles.heading_div} src={img} alt="image" />
       </div>
       <div className={style.main_container}>
