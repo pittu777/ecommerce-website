@@ -21,6 +21,7 @@ const Navbar : React.FC = () => {
       <div className={styles.container}>
     <Logo />
         <nav ref={navRef} className={styles.nav}>
+          <Link to="/">Home</Link>
           <Link to="/bedsheets">Bed sheets</Link>
           <Link to="/cushioncovers">Cushion Covers</Link>
           <Link to="/curtains">Curtains</Link>

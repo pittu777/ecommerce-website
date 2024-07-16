@@ -7,7 +7,7 @@ import img3 from '../../../src/assets/categaries/image 5 (2).png';
 import img4 from '../../../src/assets/categaries/image 5 (3).png';
 
 const CategoriesPage = () => {
-    const categories: string[] = [img1, img2, img3, img4, img1, img2, img3, img4, img1, img2, img3, img4,];
+    const categories: string[] = [img1, img2, img3, img4, img1, img2];
   return (
     <>
         <div>

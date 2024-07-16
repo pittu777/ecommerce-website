@@ -26,6 +26,8 @@ const Categories: React.FC = () => {
 
   return (
     <>
+    <div>
+
       <CategoriesPage/>
       <BestSeller/>
       <div className={styles.container}>
@@ -34,22 +36,22 @@ const Categories: React.FC = () => {
       <Hero
         imageSrc={offer1}
         altText="New Arrivals"
-
-      />
+        
+        />
       <div className={styles.container}>
         <span className={styles.heading}>New Arrivals</span>
       </div>
       <Hero
         imageSrc={offer2}
         altText="New Arrivals"
-
-
-      />
+        
+        
+        />
       <Hero
         imageSrc={offer3}
         altText="New Arrivals"
-
-      />
+        
+        />
       <div>
         <div className={styles.container}>
           <span className={styles.heading}>Our Instagram</span>
@@ -67,6 +69,7 @@ const Categories: React.FC = () => {
       </div>
       <Footer />
 
+        </div>
     </>
   );
 };

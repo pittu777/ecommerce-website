@@ -1,0 +1,30 @@
+
+
+.main {
+    display: flex;
+    gap: 0px; 
+    margin: 0px;
+  }
+  
+  .filterContainer {
+    margin: 0px;
+    flex: 1; 
+  }
+  
+  .bestSellerContainer {
+    margin: 0px;
+    flex: 3.5; 
+  }
+  .container {
+    display: grid;
+    place-items: start;
+    margin: 10px 0 20px;
+  }
+  
+  .heading {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+    font-size: 1rem;
+    align-self: center;
+    justify-self: center;
+  }
