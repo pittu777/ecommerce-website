@@ -4,6 +4,7 @@ import { FaBars, FaTimes, FaSearch, FaUser, FaShoppingCart } from "react-icons/f
 import Logo from "./Logo/Logo";
 import styles from "./navbar.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
 
 const Navbar : React.FC = () => {
   const navRef = useRef<HTMLDivElement>(null); 
@@ -20,13 +21,13 @@ const Navbar : React.FC = () => {
       <div className={styles.container}>
     <Logo />
         <nav ref={navRef} className={styles.nav}>
-          <a href="/">Bed sheets</a>
-          <a href="/cushioncovers">Cushion Covers</a>
-          <a href="/curtains">Curtains</a>
-          <a href="/bathing">Bathing</a>
-          <a href="/quilts">Quilts</a>
-          <a href="/blankets">Blankets</a>
-          <a href="/about">About us</a>
+          <Link to="/bedsheets">Bed sheets</Link>
+          <Link to="/cushioncovers">Cushion Covers</Link>
+          <Link to="/curtains">Curtains</Link>
+          <Link to="/bathing">Bathing</Link>
+          <Link to="/quilts">Quilts</Link>
+          <Link to="/blankets">Blankets</Link>
+          <Link to="/about">About us</Link>
           <div className={styles.search}>
             <input type="text" placeholder="Search" />
             <button type="submit"><FaSearch /></button>

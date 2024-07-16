@@ -14,6 +14,7 @@ import offer3 from "./../../assets/offer3.png";
 import Hero from '../hero/Hero';
 import Footer from '../footer/Footer';
 import BestSeller from '../best-sellers/BestSeller';
+import CategoriesPage from '../categoriespage/CategoriesPage';
 
 
 const Categories: React.FC = () => {
@@ -25,21 +26,7 @@ const Categories: React.FC = () => {
 
   return (
     <>
-      <div>
-        <div className={styles.container}>
-          <span className={styles.heading}>Categories</span>
-        </div>
-        <ul className={styles.imageList}>
-          {categories.map((category, index) => (
-            <li key={index}>
-              <figure>
-
-              <img className={styles.categoryImage} src={category} alt={`Category ${index + 1}`} />
-              </figure>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <CategoriesPage/>
       <BestSeller/>
       <div className={styles.container}>
         <span className={styles.heading}>Top Offers</span>

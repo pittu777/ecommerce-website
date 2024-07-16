@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../../components/hero/Hero';
-import Categories from '../../components/categories/Categories';
+import Categories from '../../components/content/Categories';
 import heroImg from "./../../assets/Rectangle 11.png";
 const Home: React.FC = () => {
   return (
