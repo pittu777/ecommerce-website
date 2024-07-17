@@ -20,6 +20,10 @@ const Navbar : React.FC = () => {
     <header className={styles.header}>
       <div className={styles.container}>
     <Logo />
+    <div className={styles.search}>
+            <input type="text" placeholder="Search" />
+            <button type="submit"><FaSearch /></button>
+          </div>
         <nav ref={navRef} className={styles.nav}>
           <Link to="/">Home</Link>
           <Link to="/bedsheets">Bed sheets</Link>
@@ -29,10 +33,6 @@ const Navbar : React.FC = () => {
           <Link to="/quilts">Quilts</Link>
           <Link to="/blankets">Blankets</Link>
           <Link to="/about">About us</Link>
-          <div className={styles.search}>
-            <input type="text" placeholder="Search" />
-            <button type="submit"><FaSearch /></button>
-          </div>
           <div className={styles.icons}>
             <a href="/account"><FaUser /></a>
             <a href="/cart"><FaShoppingCart /></a>

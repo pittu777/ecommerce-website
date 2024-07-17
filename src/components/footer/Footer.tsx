@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
       <div className={style.main_container}>
         <div className={style.logo_container}>
           <Logo />
-          <p>Join newsletter to know about new releases and latest offers</p>
+          <p className={style.newsLetter}>Join newsletter to know about new releases and latest offers</p>
           <div className={style.newsletter_container}>
             <input type="text" placeholder='Enter your email' />
             <button className={style.button}>Subscribe</button>

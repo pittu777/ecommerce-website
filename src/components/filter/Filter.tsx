@@ -65,9 +65,16 @@ const Filter: React.FC = () => {
             <span>green</span>
           </label>
         </div>
+        <div>
+        <button className={styles.apply}>Apply</button>
       </div>
+      </div>
+      
     </>
   )
 }
 
 export default Filter;
+
+
+

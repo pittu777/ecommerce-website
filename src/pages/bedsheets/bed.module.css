@@ -1,20 +1,21 @@
 
 
-.main {
+  .main {
     display: flex;
-    gap: 0px; 
+    gap: 0px;
     margin: 0px;
   }
   
   .filterContainer {
     margin: 0px;
-    flex: 1; 
+    flex: 1;
   }
   
   .bestSellerContainer {
     margin: 0px;
-    flex: 3.5; 
+    flex: 3.5;
   }
+  
   .container {
     display: grid;
     place-items: start;
@@ -28,3 +29,73 @@
     align-self: center;
     justify-self: center;
   }
+  
+  
+  @media (max-width: 1524px) {
+    .filterButtonContainer {
+      display: none; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .filterButtonContainer {
+      display: none; 
+    }
+    .bestSellerContainer {
+      flex-direction: column;
+    }
+  
+    .filterContainer {
+      display: none; 
+    }
+  
+    .filterButtonContainer {
+      display: block;
+      text-align: start;
+      margin: 10px 0 0px 10px;
+    }
+  
+    .filterButton {
+      padding: 10px 20px;
+      background-color: #C69E9E;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    .filterContainerMobile {
+      display: block;
+      margin: 10px 0; 
+    }
+  }
+  @media (max-width: 575.98px) {
+    .bestSellerContainer {
+      flex-direction: column;
+    }
+  
+    .filterContainer {
+      display: none; 
+    }
+  
+    .filterButtonContainer {
+      display: block;
+      text-align: start;
+      margin: 0px 0 0px 10px;
+    }
+  
+    .filterButton {
+      padding: 5px 10px;
+      background-color: #C69E9E;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    .filterContainerMobile {
+      display: block;
+      margin: 10px 0; 
+    }
+  }
+  

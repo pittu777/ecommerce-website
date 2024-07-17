@@ -2,25 +2,6 @@
 
 
 
-
-
-
-/* 
-.main{
-
-  width: 80%;
-  border: 1px solid black;
-  border-radius: 10px;
-  height: auto;
-  margin-top: 50px;
-  display: flex;
-  justify-self: center;
-  display: inline-block;
-
-}
- */
-
-
  .main {
   padding: 20px;
   margin-top: 61px;
@@ -66,4 +47,19 @@
   display: flex;
   align-items: center;
   gap: 10px;
+} 
+.apply{
+  padding: 10px 20px;
+  background-color: #C69E9E;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  
 }
+
+
+
+
+
+

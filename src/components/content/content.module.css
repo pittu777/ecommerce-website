@@ -1,3 +1,10 @@
+
+.main{
+  padding: 10px 10px 10px 10px;
+}
+
+
+
 .container {
   display: grid;
   place-items: center;
@@ -7,7 +14,7 @@
 .heading {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0 10px;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .imageList {
@@ -56,6 +63,7 @@ figure {
   border-radius: 50%;
   cursor: pointer;
 }
+
 figure:hover {
   bottom: -36px;
   opacity: 1;
@@ -118,7 +126,7 @@ figure:hover {
 
 @media (max-width: 767.98px) {
   .heading {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
 
   .card_p {
@@ -134,7 +142,7 @@ figure:hover {
 @media (max-width: 575.98px) {
   
   .heading {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
 
   .card_p {
