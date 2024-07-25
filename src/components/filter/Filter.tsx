@@ -52,28 +52,24 @@ const Filter: React.FC = () => {
           <p>Price</p>
           <input type="range" />
         </div>
-        
-        
-        <div className={styles.availabilty}>
+        <div className={styles.colorContainer}>
           <p>Color</p>
-          <label>
-            <input type="radio" />
-            <span>red</span>
-          </label>
-          <label>
-            <input type="radio" />
-            <span>green</span>
-          </label>
+          <div className={styles.colorCircles}>
+            <div className={`${styles.colorCircle} `}></div>
+            <div className={`${styles.colorCircle} `}></div>
+            <div className={`${styles.colorCircle} `}></div>
+            <div className={`${styles.colorCircle} `}></div>
+            <div className={`${styles.colorCircle} `}></div>
+            <div className={`${styles.colorCircle} `}></div>
+          </div>
         </div>
         <div>
         <button className={styles.apply}>Apply</button>
       </div>
       </div>
-      
     </>
   )
 }
-
 export default Filter;
 
 

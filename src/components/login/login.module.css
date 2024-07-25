@@ -1,0 +1,214 @@
+body {
+  background-color: #F9E6E6;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+.mainDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: #e2a0c1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+  position: relative; 
+}
+
+.leftSide, .rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative; 
+}
+
+.leftSide {
+  padding-right: 20px;
+}
+
+.rightSide {
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.header {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.welcomeText {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0; 
+}
+
+.googleLoginButton {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #E7B3CC;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.googleLoginButton:hover {
+  background-color: #e980b3;
+}
+
+.googleIcon {
+  margin-right: 5px;
+}
+
+.orText {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0; 
+}
+
+.emailLabel, .passwordLabel {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0; 
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px; 
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.checkboxContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.forgotPassword {
+  cursor: pointer;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #E7B3CC;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.loginButton:hover {
+  background-color: #e980b3;
+}
+
+.signUpButton {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #E7B3CC;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signUpButton:hover {
+  background-color: #e980b3;
+}
+
+.signUpText {
+  margin-top: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.createAccount {
+  text-decoration: underline;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .mainDiv {
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: auto;
+  }
+
+  .leftSide {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .mainDiv {
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 97vh;
+  }
+
+  .rightSide {
+    display: none;
+  }
+
+  .header {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .googleLoginButton, .loginButton, .signUpButton {
+    font-size: 1rem;
+  }
+
+  .welcomeText, .orText, .emailLabel, .passwordLabel, .createAccount {
+    font-size: 1rem;
+  }
+
+  .inputField {
+    padding: 8px;
+  }
+}

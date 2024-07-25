@@ -1,17 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
-
- .main {
+.main {
   padding: 20px;
-  margin-top: 61px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
+  margin-top: 64px;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
 
 .main p {
@@ -23,17 +18,16 @@
 }
 
 .input_container,
-.availabilty,
+.availability,
 .range,
-.radio,
-.color {
+.colorContainer {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .input_container label,
-.availabilty label {
+.availability label {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -43,23 +37,86 @@
   width: 100%;
 }
 
-.color {
+.colorContainer {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 10px;
-} 
-.apply{
+}
+
+.colorCircles {
+  display: flex;
+  gap: 10px;
+}
+.colorCircles .colorCircle:nth-child(1) {
+  background-color: red;
+}
+.colorCircles .colorCircle:nth-child(2) {
+  background-color: green;
+}
+.colorCircles .colorCircle:nth-child(3) {
+  background-color: steelblue;
+}
+.colorCircles .colorCircle:nth-child(4) {
+  background-color: gray;
+}
+.colorCircles .colorCircle:nth-child(5) {
+  background-color: pink;
+}
+.colorCircles .colorCircle:nth-child(6) {
+  background-color: skyblue;
+}
+
+.colorCircle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.apply {
   padding: 10px 20px;
-  background-color: #C69E9E;
+  background-color: #9b5c5c;
   border: none;
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
-  
 }
 
+@media (max-width: 768px) {
+  .main {
+    padding: 20px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
+  .apply {
+    padding: 10px 20px;
+    background-color: #9b5c5c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
 
+@media (max-width: 575.98px) {
+  .main {
+    padding: 20px;
+    margin-top: 0px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-
-
+  .apply {
+    padding: 5px 10px;
+    background-color: #9b5c5c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

@@ -8,21 +8,30 @@ import img from './../../assets/offer3.png';
 import Hero from '../../components/hero/Hero';
 import Products from '../../components/products/Products';
 import HomeCategories from '../../components/homeCategories/HomeCategories';
-import Footer from '../../components/footer/Footer';
+
+
 
 const Bed: React.FC = () => {
   const [showFilter, setShowFilter] = useState(false);
+  const [animateOut, setAnimateOut] = useState(false);
 
-  
   const toggleFilter = () => {
-    setShowFilter(!showFilter);
+    if (showFilter) {
+      setAnimateOut(true);
+      setTimeout(() => {
+        setShowFilter(false);
+        setAnimateOut(false);
+      }, 500);
+    } else {
+      setShowFilter(true);
+    }
   };
+
 
   return (
     <>
       <HomeCategories />
       <div className={styles.main}>
-
         <div className={styles.filterContainer}>
           <Filter />
         </div>
@@ -33,26 +42,23 @@ const Bed: React.FC = () => {
           </div>
           <Hero imageSrc={img} />
 
-
           <div className={styles.filterButtonContainer}>
             <button className={styles.filterButton} onClick={toggleFilter}>
               Filter
             </button>
           </div>
-
-
           {showFilter && (
-            <div className={styles.filterContainerMobile}>
+            <div
+              className={`${styles.filterContainerMobile} ${animateOut ? styles['slide-out'] : ''
+                }`}
+            >
               <Filter />
             </div>
           )}
-
           <Products />
-
         </div>
       </div>
     </>
   );
 };
-
 export default Bed;
