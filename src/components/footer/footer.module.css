@@ -11,6 +11,8 @@ body {
   gap: 30px;
   padding: 20px;
   background-color: #f8f8f8;
+  width: 90%;
+  margin: 10px auto;
 }
 
 .logo_container {
@@ -132,7 +134,9 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   /* gap: 20px; */
-  margin: 20px;
+  /* margin: 20px; */
+  width: 90%;
+  margin: 10px auto;
 }
 
 .feature_item {
@@ -241,7 +245,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    margin: 10px auto;
   }
 
   .newsletter_container {
@@ -325,7 +330,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    margin: 10px auto;
   }
   .newsLetter_p {
     width: 100%;

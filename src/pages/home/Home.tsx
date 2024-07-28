@@ -10,7 +10,7 @@ const Home: React.FC = () => {
       <Hero
         imageSrc={heroImg}
         altText="New Arrivals"
-        heroText=" elegance with our exclusive collection of handloom products."
+        heroText="Step into a world of traditional elegance with our exclusive collection of handloom products."
       />
       <Content />
 

@@ -18,7 +18,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    width: 90%;
+    margin: 10px auto;
 }
 
 .imageList li {
@@ -98,6 +100,16 @@
 }
 
 @media (max-width: 767.98px) {
+    .imageList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+        /* margin-top: 20px; */
+        width: 90%;
+        margin: 10px auto;
+    }
+    
     .imageList li {
         width: 45%;
     }
