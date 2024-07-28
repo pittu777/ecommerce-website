@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    
+}
+.card{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    .image{
+        width: 100%;
+        img{
+            width: 100%;
+            height: 21vw;
+        }
+    }
+    .stars{
+        width: 100%;
+        height: 2vw;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        .starsgrp{
+            display: flex;
+            gap: .5vw;
+            .starsimg{
+                background-image: url('../../../../assets/Product_details/Card/star.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 1.5vw;
+                height: 1.5vw;
+            }
+            .hstarsimg{
+                background-image: url('../../../../assets/Product_details/Card/halfstar.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 1.5vw;
+                height: 1.5vw;
+            }
+        }
+        .startext{
+            margin-left: 1vw;
+            font-size:1vw ;
+            padding: auto;
+        }
+        
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3vw;
+        padding-right: 2vw;
+    }
+    .price{
+        font-size: 1.3vw;
+        font-weight: 800;
+        span{
+            font-weight: 500;
+            margin-left: 1vw;
+            text-decoration: line-through;
+        }
+
+    }
+    .ATC{
+        width: 100%;
+        height: 3vw;
+        display: flex;
+        background: rgba(190, 159, 143, 1);
+        color: white;
+        font-size: 1.3vw;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+        border-radius: .5vw;
+    }   
+
+}
