@@ -3,15 +3,28 @@
 }
 
 .container {
-  display: grid;
+  display: flex;
   place-items: center;
-  /* margin: 10px 0 20px; */
+  justify-content: center;
+  gap: 1vw;
+  
+}
+.container hr{
+  width: 30%;
+  height: 0.2vw;
+  color: black;
+  background-color: black;
 }
 
 .heading {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   padding: 0 10px;
-  font-size: 2rem;
+  font-size: 3rem;
+  margin-top: 5px;
+  
 }
 
 .imageList {
@@ -137,6 +150,19 @@ figure:hover {
 }
 
 @media (max-width: 575.98px) {
+  .container {
+    display: flex;
+    place-items: center;
+    justify-content: space-evenly;
+    
+  }
+  .container hr{
+    width: 20%;
+    height: 0.2vw;
+    color: black;
+    background-color: black;
+  }
+  
   .heading {
     font-size: 1.2rem;
   }

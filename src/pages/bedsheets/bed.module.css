@@ -71,7 +71,10 @@
   .filterButtonContainer {
     display: block;
     text-align: start;
-    margin: 10px 0 0px 10px;
+    /* margin: 10px 0 0px 10px; */
+    width: 90%;
+    margin: 10px auto;
+    margin-left: 50px;
   }
 
   .filterButton {
@@ -110,6 +113,7 @@
     /* margin: 0px 0 0px 10px; */
     width: 90%;
     margin: 10px auto;
+    margin-left: 35px;
   }
 
   .filterButton {

@@ -8,6 +8,8 @@ import img from './../../assets/offer3.png';
 import Hero from '../../components/hero/Hero';
 import Products from '../../components/products/Products';
 import HomeCategories from '../../components/homeCategories/HomeCategories';
+import Navbar from '../../components/nav-bar/Navbar';
+import Header from '../../components/header/Header';
 
 
 
@@ -30,6 +32,8 @@ const Bed: React.FC = () => {
 
   return (
     <>
+    <Header/>
+    <Navbar/>
       <HomeCategories />
       <div className={styles.main}>
         <div className={styles.filterContainer}>

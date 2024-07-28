@@ -5,7 +5,7 @@ import { useLocation, Link } from "react-router-dom";
 import Logo from "./Logo/Logo";
 import styles from "./navbar.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import accountImage from "./../../assets/user.svg";
+import accountImage from "./../../assets/acc.png";
 import cartImage from "./../../assets/cartt.svg";
 
 const Navbar: React.FC = () => {
@@ -35,8 +35,8 @@ const Navbar: React.FC = () => {
                 <FaChevronDown className={styles.dropdown_icon} />
               </Link>
               <div className={styles.dropdown_content}>
-                <Link to="/bedsheets/type1">Type 1</Link>
-                <Link to="/bedsheets/type2">Type 2</Link>
+                <Link to="/bedsheets/type1">bedsheets</Link>
+                <Link to="/bedsheets/type2">modern bedsheets</Link>
               </div>
             </div>
             <div className={styles.dropdown}>
@@ -45,8 +45,8 @@ const Navbar: React.FC = () => {
                 <FaChevronDown className={styles.dropdown_icon} />
               </Link>
               <div className={styles.dropdown_content}>
-                <Link to="/cushioncovers/type1">Type 1</Link>
-                <Link to="/cushioncovers/type2">Type 2</Link>
+                <Link to="/cushioncovers/type1">cushion covers</Link>
+                <Link to="/cushioncovers/type2">cushion covers</Link>
               </div>
             </div>
             <div className={styles.dropdown}>
@@ -55,8 +55,8 @@ const Navbar: React.FC = () => {
                 <FaChevronDown className={styles.dropdown_icon} />
               </Link>
               <div className={styles.dropdown_content}>
-                <Link to="/curtains/type1">Type 1</Link>
-                <Link to="/curtains/type2">Type 2</Link>
+                <Link to="/curtains/type1">curtains</Link>
+                <Link to="/curtains/type2">curtains</Link>
               </div>
             </div>
             <div className={styles.dropdown}>
@@ -65,8 +65,8 @@ const Navbar: React.FC = () => {
                 <FaChevronDown className={styles.dropdown_icon} />
               </Link>
               <div className={styles.dropdown_content}>
-                <Link to="/bathing/type1">Type 1</Link>
-                <Link to="/bathing/type2">Type 2</Link>
+                <Link to="/bathing/type1">bathing</Link>
+                <Link to="/bathing/type2">bathing</Link>
               </div>
             </div>
             <div className={styles.dropdown}>
@@ -75,8 +75,8 @@ const Navbar: React.FC = () => {
                 <FaChevronDown className={styles.dropdown_icon} />
               </Link>
               <div className={styles.dropdown_content}>
-                <Link to="/quilts/type1">Type 1</Link>
-                <Link to="/quilts/type2">Type 2</Link>
+                <Link to="/quilts/type1">quilts</Link>
+                <Link to="/quilts/type2">quilts</Link>
               </div>
             </div>
             <div className={styles.dropdown}>
@@ -85,8 +85,8 @@ const Navbar: React.FC = () => {
                 <FaChevronDown className={styles.dropdown_icon} />
               </Link>
               <div className={styles.dropdown_content}>
-                <Link to="/blankets/type1">Type 1</Link>
-                <Link to="/blankets/type2">Type 2</Link>
+                <Link to="/blankets/type1">blankets</Link>
+                <Link to="/blankets/type2">blankets</Link>
               </div>
             </div>
             <div className={styles.dropdown}>

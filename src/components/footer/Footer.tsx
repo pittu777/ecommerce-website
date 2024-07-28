@@ -1,15 +1,18 @@
 
 import React from 'react'
-import img2 from "./../../assets/Raja_s_Chanab_16x20-removebg-preview 2.png";
+import img2 from "./../../assets/footer/free-shipping.png";
 import styles from "./footer.module.css";
 import Logo from '../nav-bar/Logo/Logo';
+import img3 from "./../../assets/footer/cash-on-delivery.png";
+import img4 from "./../../assets/footer/shield.png";
+import img1 from "./../../assets/footer/toggles.png";
 
 const Footer: React.FC = () => {
   return (
     <>
       <div className={styles.features_container}>
         <div className={styles.feature_item}>
-          <img src={img2} alt="Customizable" />
+          <img src={img1} alt="Customizable" />
           <div>
             <p>CUSTOMIZABLE</p>
             <p>Customization available for selected products</p>
@@ -23,14 +26,14 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className={styles.feature_item}>
-          <img src={img2} alt="COD" />
+          <img src={img3} alt="COD" />
           <div>
             <p>COD</p>
             <p>Cash on delivery available</p>
           </div>
         </div>
         <div className={styles.feature_item}>
-          <img src={img2} alt="Secure Payments" />
+          <img src={img4} alt="Secure Payments" />
           <div>
             <p>100% SECURE PAYMENTS</p>
             <p>We ensure secure payment with Razorpay</p>

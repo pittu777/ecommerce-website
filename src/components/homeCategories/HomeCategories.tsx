@@ -1,30 +1,20 @@
 
 import React from 'react'
 import styles from "./home.module.css";
-import img1 from '../../../src/assets/categaries/image 5.png';
-import img2 from '../../../src/assets/categaries/image 5 (1).png';
-import img3 from '../../../src/assets/categaries/image 5 (2).png';
-import img4 from '../../../src/assets/categaries/image 5 (3).png';
+import img1 from '../../../src/assets/sellers/image 7.png';
+import img2 from '../../../src/assets/sellers/Frame 28.png';
+import img3 from '../../../src/assets/sellers/image 8.png';
+import img4 from '../../../src/assets/sellers/image 7.png';
+import Categories_Card from '../card/categories_card/Categories_Card';
 
 const HomeCategories = () => {
 
-    const categories: string[] = [img1, img2, img3, img4,];
+    const images: string[] = [img1, img2, img3, img4,];
+    const des:string[]=["Cushion Covers","Comfortable Blankets","Royal Curtains","Luxury Towels"];
   return (
     <>
         <div>
-        <div className={styles.container}>
-          <span className={styles.heading}>Categories</span>
-        </div>
-        <ul className={styles.imageList}>
-          {categories.map((category, index) => (
-            <li key={index}>
-              <figure>
-
-              <img className={styles.categoryImage} src={category} alt={`Category ${index + 1}`} />
-              </figure>
-            </li>
-          ))}
-        </ul>
+        <Categories_Card images={images} des={des}/>
       </div> 
       
     </>
