@@ -15,9 +15,7 @@ const Insta = () => {
 
     return (
         <div>
-            <div className={styles.container}>
-                <span className={styles.heading}>Our Instagram</span>
-            </div>
+        
             <ul className={styles.imageList}>
                 {sellers.map((category, index) => (
                     <li key={index}>

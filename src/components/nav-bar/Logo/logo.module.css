@@ -1,6 +1,7 @@
 
 .logoContainer .logoImage {
-    width: 180px; 
+    /* width: 180px;  */
+    width: 8vw;
     height: auto;
     border: none;
     margin-right: 15px;

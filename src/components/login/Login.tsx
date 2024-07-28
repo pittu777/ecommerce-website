@@ -1,7 +1,8 @@
-import React from 'react';
+
+
 import styles from "./login.module.css";
 import img from "./../../assets/Raja_s_Chanab_16x20-removebg-preview 2.png";
-import {FcGoogle} from 'react-icons/fc';
+import { FcGoogle } from 'react-icons/fc';
 
 const Login = () => {
   return (
@@ -12,7 +13,7 @@ const Login = () => {
           <h1 className={styles.header}>Login now</h1>
           <p className={styles.welcomeText}>Hi, Welcome back</p>
           <button className={styles.googleLoginButton}>
-            <span className={styles.googleIcon}><FcGoogle size={20}/></span>
+            <span className={styles.googleIcon}><FcGoogle size={20} /></span>
             Login with Google
           </button>
           <p className={styles.orText}>or Login with Email</p>

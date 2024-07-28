@@ -37,11 +37,15 @@ const Filter: React.FC = () => {
             <span>Single</span>
           </label>
         </div>
-        <div className={styles.availabilty}>
+        <div className={styles.availability}>
           <p>Availabilty</p>
           <label>
             <input type="checkbox" />
             <span>In stock</span>
+          </label>
+          <label>
+            <input type="checkbox" />
+            <span>Out of stock</span>
           </label>
           <label>
             <input type="checkbox" />
