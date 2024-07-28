@@ -1,0 +1,54 @@
+.MidLeft{
+    display: flex;
+    flex-direction: column;
+
+    .Header{
+        font-family: "Dancing Script", cursive;
+        font-weight: 400;
+        font-size: 3vw;
+        margin-bottom: 5vw;
+        text-align: center;
+
+        .styled-hr{
+            border: none; /* Remove default border */
+            height: 2px;
+            background-color: #000000; 
+            margin: 5% 20%;
+        }
+    }
+    .Price{
+        margin: 1vw 10vw;
+        font-weight: 700;
+        font-size:1.7vw ;
+        display: flex;
+        span{
+            font-weight: 400;
+            font-size:1.6vw ;
+            margin-left: 3vw;
+            text-decoration: line-through;
+        }
+         
+    }
+    .list{
+        margin:0 8vw;
+               
+        .styled-list{
+            width: max-content;
+            list-style-type: none;        
+            .list-item{
+                font-size:1.4vw ;
+                font-weight: 400;
+                margin: 2vw auto;
+            }
+            .list-itemh{
+                color:  rgba(212, 97, 130, 1);
+                font-size:1.7vw ;
+                font-weight: 400;
+                margin-bottom: 1vw;
+            }
+            
+
+            
+        }
+    }   
+}

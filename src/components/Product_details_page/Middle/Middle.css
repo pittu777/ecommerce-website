@@ -1,0 +1,15 @@
+.Middle{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+    .MidL{
+        height: 100%;
+        width: 50%;
+    }
+    .MidR{
+        height: 100%;
+        width: 40%;
+    }
+}
