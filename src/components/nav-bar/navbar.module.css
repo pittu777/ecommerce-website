@@ -58,7 +58,7 @@
   font-size: 1rem;
   border: none;
   border-bottom: 2px solid black;
-  background-color: #F9E6E6;
+  background-color: #FDF5EB;
 }
 
 .search button {
@@ -121,6 +121,7 @@
   flex-direction: row;
 }
 
+
 @media (max-width: 991.98px) {
   .container {
     display: flex;
@@ -181,7 +182,7 @@
     font-size: 1rem;
     border: none;
     border-bottom: 2px solid black;
-    background-color: #f2e5eb;
+    background-color: #FDF5EB;
     width: 80%;
     height: auto;
   }
@@ -254,7 +255,7 @@
     font-size: 1rem;
     border: none;
     border-bottom: 2px solid black;
-    background-color: #F9E6E6;
+    background-color:#FDF5EB;
     width: 80%;
     height: auto;
   }
@@ -312,7 +313,7 @@
     font-size: 1rem;
     border: none;
     border-bottom: 2px solid black;
-    background-color: #F9E6E6;
+    background-color:#FDF5EB;
   }
   
 }

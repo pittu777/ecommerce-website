@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
         <div className={styles.container}>
           <Logo />
           <div className={styles.search}>
-            <input type="text" placeholder="Search" />
+            <input type="text" placeholder="Search" style={{backgroundColor:"#FDF5EB"}}/>
             <button type="submit"><FaSearch /></button>
           </div>
           <nav ref={navRef} className={styles.nav}>

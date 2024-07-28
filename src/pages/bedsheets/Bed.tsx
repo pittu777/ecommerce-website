@@ -34,7 +34,10 @@ const Bed: React.FC = () => {
     <>
     <Header/>
     <Navbar/>
+    <div className={styles.categories}>
+
       <HomeCategories />
+    </div>
       <div className={styles.main}>
         <div className={styles.filterContainer}>
           <Filter />
@@ -44,7 +47,11 @@ const Bed: React.FC = () => {
           <div className={styles.container}>
             <span className={styles.heading}>Best Sellers</span>
           </div>
-          <Hero imageSrc={img} />
+          {/* <Hero imageSrc={img} /> */}
+
+          <div className={styles.image_div}>
+            <img src={img} alt="image" />
+          </div>
 
           <div className={styles.filterButtonContainer}>
             <button className={styles.filterButton} onClick={toggleFilter}>

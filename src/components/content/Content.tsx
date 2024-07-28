@@ -41,7 +41,7 @@ const Content: React.FC = () => {
         <span className={styles.heading}>New Arrivals</span>
         <hr />
       </div>
-        <div >
+        <div className={styles.image_div}>
           <Hero imageSrc={offer3}/>
         </div>
         <div>
