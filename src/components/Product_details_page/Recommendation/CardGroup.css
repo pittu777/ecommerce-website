@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box ;    
+}
+.ymal{
+    width: 90%;
+    margin:auto;
+    margin-bottom: 5vw;
+    display: flex;
+    flex-direction: column;
+    .header{
+        width:100%;
+        margin: 5vw auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:2vw;
+        hr {
+            border: none; /* Remove the default border */
+            height: 2px; /* Set the height of the line */
+            background-color: black; /* Set the color of the line */
+            margin: 20px 0;
+            width: 30vw;
+        }
+        .text{
+            font-family: "Dancing Script", cursive;
+            font-weight: 400;
+            font-size: 3vw;
+            text-align: center;
+        }
+    }
+
+    .group{
+        display: flex;
+        justify-content: space-around;
+    }
+}

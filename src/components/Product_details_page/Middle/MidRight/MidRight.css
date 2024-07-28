@@ -1,0 +1,73 @@
+.MidRight{
+    .CNT,.ATC,.BN,.SA,.CN{
+        width: 90%;
+        border: 1px solid rgba(250, 139, 171, 1);
+        margin-bottom: 3vw;
+        margin-right: auto;
+        margin-left: auto;
+        height: 5vw;
+        padding: 1vw 5vw 1vw 5vw;
+        border: 1px 0px 0px 0px;
+        justify-content: space-between;
+        opacity: 0px;   
+    }
+    .CNT{
+        display: flex;
+        align-items: center;
+        font-size: 1.671vw;
+        font-weight: 400;
+        .dec,.inc{
+            font-size: 3vw;
+            font-weight: 500;
+        }
+
+    }
+    .ATC{
+        display: flex;
+        align-items: center;
+        font-size: 1.671vw;
+        font-weight: 400;
+        justify-content: center;
+    }
+    .BN{
+        display: flex;
+        align-items: center;
+        font-size: 1.671vw;
+        font-weight: 400;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        background: rgba(233, 135, 182, 0.7333);
+    }
+    .SAtext{
+        color: rgb(233, 135, 182);
+        width: 90%;
+        font-size: 1vw;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: .5vw;
+    }
+    .SA{
+        font-size: 1.671vw;
+        font-weight: 400;
+        display: flex;
+        padding-top: auto;
+        padding-bottom: auto;
+        align-items: center;
+        padding-left: 2vw;
+        color: rgba(130, 130, 130, 1);
+
+    }
+    .CN{
+        width: 40%;
+        margin-left: 1.75vw;
+        display: flex;
+        align-items: center;
+        font-size: 1.671vw;
+        font-weight: 400;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        background: rgba(233, 135, 182, 0.7333);
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+}
