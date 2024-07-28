@@ -17,6 +17,8 @@
   margin-bottom: 10px;
 }
 
+
+
 .input_container,
 .availability,
 .range,
@@ -32,6 +34,8 @@
   align-items: center;
   gap: 10px;
 }
+
+
 
 .range input[type="range"] {
   width: 100%;

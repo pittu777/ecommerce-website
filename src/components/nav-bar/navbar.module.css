@@ -39,6 +39,10 @@
 .nav a:hover {
   color: #e7b3cc;
 }
+.nav a.active {
+  border-bottom: 2px solid #000;
+}
+
 
 .search {
   display: flex;
@@ -54,7 +58,7 @@
   font-size: 1rem;
   border: none;
   border-bottom: 2px solid black;
-  background-color: #f2e5eb;
+  background-color: #F9E6E6;
 }
 
 .search button {
@@ -250,7 +254,7 @@
     font-size: 1rem;
     border: none;
     border-bottom: 2px solid black;
-    background-color: #f2e5eb;
+    background-color: #F9E6E6;
     width: 80%;
     height: auto;
   }
@@ -302,4 +306,13 @@
   .nav_btn {
     margin-left: auto;
   }
+  .search input {
+    padding: 5px 10px;
+    outline: none;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: #F9E6E6;
+  }
+  
 }

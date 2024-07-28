@@ -41,6 +41,23 @@ body {
   font-style: normal;
   font-size: 1rem;
 }
+.main_container {
+  background-image: url("./../../assets/footer/elephant-3223522_640\ 4.png");
+  background-repeat: no-repeat;
+  background-size: 550px;
+  background-position: right;
+  /* animation: moveBackground 10s linear infinite; */
+}
+
+/* @keyframes moveBackground {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+} */
+
 
 .newsletter_container input[type="text"] {
   /* margin-bottom: 10px; */
@@ -93,7 +110,7 @@ body {
 .social_links {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -294,6 +311,13 @@ body {
   .feature_item img {
     margin-right: 10px;
   }
+  .main_container{
+    background-image: url("./../../assets/footer/elephant-3223522_640\ 4.png");
+    background-repeat: no-repeat;
+    background-size: 430px;
+    background-position: right;
+    
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -386,4 +410,12 @@ body {
   .feature_item img {
     margin-right: 10px;
   }
+  .main_container{
+    background-image: url("./../../assets/footer/elephant-3223522_640\ 4.png");
+    background-repeat: no-repeat;
+    background-size: 345px;
+    background-position: bottom;
+    
+  }
+  
 }
