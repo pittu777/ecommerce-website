@@ -36,15 +36,16 @@
     font-style: normal;
     padding: 0 10px;
     font-size: 3rem;
-    margin-top: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
   }
 
 
   
   .imageList {
-    display: flex;
-    align-items: first baseline;
+    display: grid;
+    
     place-items: center;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -151,9 +152,8 @@
     }
   
     .imageList {
-      /* grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
-      display: flex;
-      align-items: first baseline;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      
       
     }
   

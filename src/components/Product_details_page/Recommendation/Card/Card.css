@@ -1,68 +1,65 @@
-*{
+* {
     box-sizing: border-box;
-    
 }
-.card{
+.card {
     width: 20%;
     display: flex;
     flex-direction: column;
     gap: 1vw;
-    .image{
+    .image {
         width: 100%;
-        img{
+        img {
             width: 100%;
             height: 21vw;
         }
     }
-    .stars{
+    .stars {
         width: 100%;
         height: 2vw;
         display: flex;
         justify-content: left;
         align-items: center;
 
-        .starsgrp{
+        .starsgrp {
             display: flex;
-            gap: .5vw;
-            .starsimg{
-                background-image: url('../../../../assets/Product_details/Card/star.svg');
+            gap: 0.5vw;
+            .starsimg {
+                background-image: url("../../../../assets/Product_details/Card/star.svg");
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 1.5vw;
                 height: 1.5vw;
             }
-            .hstarsimg{
-                background-image: url('../../../../assets/Product_details/Card/halfstar.svg');
+            .hstarsimg {
+                background-image: url("../../../../assets/Product_details/Card/halfstar.svg");
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 1.5vw;
                 height: 1.5vw;
             }
         }
-        .startext{
+        .startext {
             margin-left: 1vw;
-            font-size:1vw ;
+            font-size: 1vw;
             padding: auto;
         }
-        
     }
-    .text{
+    .text {
         display: flex;
         flex-direction: column;
         font-size: 1.3vw;
         padding-right: 2vw;
     }
-    .price{
+    .price {
         font-size: 1.3vw;
         font-weight: 800;
-        span{
+        span {
             font-weight: 500;
             margin-left: 1vw;
             text-decoration: line-through;
         }
-
     }
-    .ATC{
+    .ATC {
         width: 100%;
         height: 3vw;
         display: flex;
@@ -72,7 +69,6 @@
         font-weight: 500;
         align-items: center;
         justify-content: center;
-        border-radius: .5vw;
-    }   
-
+        border-radius: 0.5vw;
+    }
 }

@@ -45,6 +45,7 @@ const Bed: React.FC = () => {
 
         <div className={styles.bestSellerContainer}>
           <div className={styles.container}>
+            
             <span className={styles.heading}>Best Sellers</span>
           </div>
           {/* <Hero imageSrc={img} /> */}
