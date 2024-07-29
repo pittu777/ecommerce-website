@@ -49,6 +49,7 @@ const Navbar: React.FC = () => {
                 <Link to="/cushioncovers/type2">cushion covers</Link>
               </div>
             </div>
+            
             <div className={styles.dropdown}>
               <Link to="/curtains" className={location.pathname.startsWith("/curtains") ? styles.active : ""}>
                 Curtains
