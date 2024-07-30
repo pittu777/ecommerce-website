@@ -30,7 +30,7 @@ const BestSeller: React.FC<BestSellerProps> = ({ images }) => {
             {renderStars(index < 1 ? 5 : 4)}
             <p className={styles.card_p}>Floral Print Cotton Super King Bedsheet with 2 Reversible Pillow Covers</p>
             <p className={styles.card_price}>Rs. 4,799 <span className={styles.removed_price}>11399.00 Rs</span></p>
-            <button type="button" className="btn btn-primary btn-sm" style={{ backgroundColor: "#BE9F8F", border: "none", width: "100%", height: "auto" }}>Add to cart</button>
+            <button type="button" className={styles.card_button}>Add to cart</button>
           </li>
         ))}
       </ul>

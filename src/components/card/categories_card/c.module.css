@@ -27,6 +27,7 @@
     text-align: center;
     margin-top: 10px;
     font-size: 1.5rem;
+    
   }
   
   .heading {
@@ -45,7 +46,6 @@
   
   .imageList {
     display: grid;
-    
     place-items: center;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -55,16 +55,19 @@
     width: 90%;
     margin: 10px auto;
     
+    
   }
   
   .imageList li {
     list-style: none;
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    align-self: first baseline;
+    justify-self: center;
     
   }
   
@@ -81,7 +84,7 @@
   
   .categoryImage:hover {
     transform: scale(1.05);
-    border: 1.2px solid white;
+    border: 2.2px solid white;
   }
   
   figure {
@@ -127,12 +130,39 @@
   }
   
   @media (max-width: 767.98px) {
+
     .heading {
       font-size: 1.5rem;
+      
     }
   
+    
     .imageList {
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+        
+        display: grid;
+      place-items: center;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      justify-items: center;
+      padding: 0;
+      margin-top: 20px;
+      width: 90%;
+      margin: 10px auto;
+        
+      }
+      .imageList li {
+        list-style: none;
+        width: 100%;
+        border-radius: 10px;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        align-self: first baseline;
+        
+      }
+    
     }
   
     .categoryImage {
@@ -142,18 +172,39 @@
     figure {
       max-width: 150px;
     }
-  }
+  
   
   @media (max-width: 575.98px) {
-    
+    .container{
+      border-top: 1px solid black;
+    }
     .heading {
       font-size: 1.2rem;
       
     }
   
     .imageList {
-      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+      display: grid;
+    place-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    justify-items: center;
+    padding: 0;
+    margin-top: 20px;
+    width: 90%;
+    margin: 10px auto;
       
+    }
+    .imageList li {
+      list-style: none;
+      width: 100%;
+      border-radius: 10px;
+      font-family: "Dancing Script", cursive;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      align-self: first baseline;
       
     }
   

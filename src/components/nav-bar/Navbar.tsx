@@ -96,7 +96,7 @@ const Navbar: React.FC = () => {
               </Link>
             </div>
             <div className={styles.dropdown}>
-              <a href="/account">
+              <a href="/login">
                 <img src={accountImage} alt="img" />
               </a>
               <a href="/cart">

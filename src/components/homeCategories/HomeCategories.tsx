@@ -9,8 +9,8 @@ import Categories_Card from '../card/categories_card/Categories_Card';
 
 const HomeCategories = () => {
 
-    const images: string[] = [img1, img2, img3, img4,];
-    const des:string[]=["Cushion Covers","Comfortable Blankets","Royal Curtains","Luxury Towels"];
+    const images: string[] = [img1, img2, img3, img4,img1,img2,];
+    const des:string[]=["Cushion Covers","Comfortable Blankets","Royal Curtains","Luxury Towels","Royal Curtains","Luxury Towels"];
   return (
     <>
         <div>

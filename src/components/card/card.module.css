@@ -48,6 +48,27 @@
   border-radius: 10px;
   justify-self: start;
 }
+.card_button{
+  justify-self: center;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: #fff;
+  background-color: #BE9F8F;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  border-radius: 10px;
+}
+.card_button:hover{
+  background-color: #E3C9BA;
+
+}
 
 .card_p,
 .stars {
@@ -122,6 +143,29 @@
     font-size: 16px;
   }
 
+
+  .card_button{
+    justify-self: center;
+    border: none;
+    outline: 0;
+    padding: 5px 5px 5px 5px;
+    color: #fff;
+    background-color: #BE9F8F;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border-radius: 10px;
+  }
+  .card_button:hover{
+    background-color: #E3C9BA;
+  
+  }
+
   .removed_price {
     margin-left: 1rem;
     font-weight: normal;
@@ -139,6 +183,29 @@
     height: 50vh;
     border-radius: 10px;
     justify-self: start;
+  }
+
+  
+  .card_button{
+    justify-self: center;
+    border: none;
+    outline: 0;
+    padding: 5px 5px 5px 5px;
+    color: #fff;
+    background-color: #BE9F8F;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border-radius: 10px;
+  }
+  .card_button:hover{
+    background-color: #E3C9BA;
+  
   }
 
   .heading {
@@ -169,6 +236,29 @@
   .imageList {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .card_button{
+    justify-self: center;
+    border: none;
+    outline: 0;
+    padding: 5px 5px 5px 5px;
+    color: #fff;
+    background-color: #BE9F8F;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border-radius: 10px;
+  }
+  .card_button:hover{
+    background-color: #E3C9BA;
+  
+  }
+  
 
   .img {
     cursor: pointer;
