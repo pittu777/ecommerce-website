@@ -178,3 +178,47 @@ figure:hover {
     font-size: 14px;
   }
 }
+
+
+
+
+
+
+
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 10px auto;
+  width: 90%;
+}
+
+@media (min-width: 1200px) {
+  .videoGrid {
+    grid-template-columns: repeat(4, 1fr); /* 4 videos per row on large screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .videoGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 videos per row on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  
+.videoGrid {
+  display: grid;
+  grid-template-rows: 2fr;
+  place-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+  .videoGrid {
+    grid-template-rows: 2fr; /* 1 video per row on extra small screens */
+  }
+}

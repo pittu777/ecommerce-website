@@ -54,50 +54,66 @@
 
 
 
+import React, { useState, useRef, useEffect } from 'react';
+import styles from './insta.module.css';
 
-
-
-import React, { useEffect } from 'react';
-import styles from "./insta.module.css";
-
-const Insta = () => {
-    const postLinks = [
-        'https://www.instagram.com/p/C7KDAWaIVVJ/?utm_source=ig_embed&amp;utm_campaign=loading',
-        'https://www.instagram.com/p/C7KDAWaIVVJ/?utm_source=ig_embed&amp;utm_campaign=loading',
-        'https://www.instagram.com/p/C7KDAWaIVVJ/?utm_source=ig_embed&amp;utm_campaign=loading',
-        'https://www.instagram.com/p/C7KDAWaIVVJ/?utm_source=ig_embed&amp;utm_campaign=loading',
-        
-    ];
-
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.async = true;
-        script.src = "//www.instagram.com/embed.js";
-        document.body.appendChild(script);
-
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
-
-    return (
-        <div className={styles.grid_container}>
-            {postLinks.map((link, index) => (
-                <div key={index} className={styles.grid_item}>
-                    <blockquote
-                        className="instagram-media"
-                        data-instgrm-captioned
-                        data-instgrm-permalink={link}
-                        data-instgrm-version="14"
-                        style={{ background: '#FFF', border: 0, borderRadius: '3px', boxShadow: '0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)', margin: '1px', padding: 0, width: '100%',  minWidth: '200px' }}
-                    >
-                        <a href={link} target="_blank" rel="noopener noreferrer">View this post on Instagram</a>
-                    </blockquote>
-                    
-                </div>
-            ))}
-        </div>
-    );
+interface VideoComponentProps {
+  src: string;
+  likes: number;
+  views: number;
 }
 
-export default Insta;
+const VideoComponent: React.FC<VideoComponentProps> = ({ src, likes, views }) => {
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [showButton, setShowButton] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlayPause = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation(); // Prevents click event from bubbling to the video container
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
+  const handleVideoClick = () => {
+    setShowButton(!showButton);
+  };
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  }, []);
+
+  return (
+    <div className={styles.videoContainer} onClick={handleVideoClick}>
+      <video
+        ref={videoRef}
+        className={styles.video}
+        src={src}
+        controls={false}
+        autoPlay
+        muted
+        loop
+      />
+      <div className={styles.overlay}>
+        <div className={styles.likesViews}>
+          <span>{likes} Likes</span>
+          <span>{views} Views</span>
+        </div>
+        {showButton && (
+          <button className={styles.playPauseButton} onClick={handlePlayPause}>
+            {isPlaying ? 'Pause' : 'Play'}
+          </button>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default VideoComponent;

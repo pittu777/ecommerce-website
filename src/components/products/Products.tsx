@@ -1,6 +1,6 @@
 
 import styles from "./product.module.css"
-import BestSeller from '../card/Card'
+import BestSeller from '../card/product_card/Card'
 import img1 from "./../../assets/sellers/Frame 28.png";
 import img2 from "./../../assets/sellers/image 7.png";
 import img3 from "./../../assets/sellers/image 8.png";

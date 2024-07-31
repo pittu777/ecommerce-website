@@ -5,7 +5,7 @@ import offer2 from "./../../assets/offer2.png";
 import offer3 from "./../../assets/offer3.png";
 import offer from "./../../assets/categaries/offer 1.svg";
 import Footer from '../footer/Footer';
-import BestSeller from '../card/Card';
+import BestSeller from '../card/product_card/Card';
 import Insta from '../insta-post/Insta';
 import img1 from "./../../assets/sellers/Frame 28.png";
 import img2 from "./../../assets/sellers/image 7.png";
@@ -15,11 +15,20 @@ import HomeCategories from '../homeCategories/HomeCategories';
 import SlideHero from '../hero/slideHero/SlideHero';
 import Hero from '../hero/Hero';
 
+import VideoComponent from '../insta-post/Insta';
+import video1 from './../../assets/videos/v.mp4';
 
 const Content: React.FC = () => {
 
   const sellers = [img1, img2, img3, img4];
-
+  const videoData = [
+    { src: video1, likes: 100, views: 2000 },
+    { src: video1, likes: 100, views: 2000 },
+    { src: video1, likes: 100, views: 2000 },
+    { src: video1, likes: 100, views: 2000 },
+    
+    // Add more video data if you have multiple videos
+  ];
   return (
     <>
       <div className={styles.main}>
@@ -52,7 +61,13 @@ const Content: React.FC = () => {
         <span className={styles.heading}>Our Instagram</span>
         <hr />
       </div>
-        <Insta />
+        {/* <Insta /> */}
+        <div className={styles.videoGrid}>
+
+        {videoData.map((video, index) => (
+          <VideoComponent key={index} src={video.src} likes={video.likes} views={video.views} />
+        ))}
+        </div>
         <div className={styles.container}>
         <hr />
         <span className={styles.heading}>About Us</span>

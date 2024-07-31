@@ -133,6 +133,7 @@
     padding-top: 0px;
     width: 100%;
     height: auto;
+    
   }
   .header {
     position: relative;
@@ -191,7 +192,8 @@
   }
 }
 
-@media (max-width: 767.98px) {
+
+@media (max-width: 767.98px){
   .container {
     display: flex;
     justify-content: baseline;
@@ -199,6 +201,7 @@
     padding-top: 0px;
     width: 100%;
     height: auto;
+    
   }
   .header {
     position: relative;
