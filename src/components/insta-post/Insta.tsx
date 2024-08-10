@@ -56,6 +56,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import styles from './insta.module.css';
+import { FaHeart, FaEye  } from 'react-icons/fa';
 
 interface VideoComponentProps {
   src: string;
@@ -103,8 +104,8 @@ const VideoComponent: React.FC<VideoComponentProps> = ({ src, likes, views }) =>
       />
       <div className={styles.overlay}>
         <div className={styles.likesViews}>
-          <span>{likes} Likes</span>
-          <span>{views} Views</span>
+          <span>{<FaHeart/>}</span>
+          <span>{<FaEye/>} Views</span>
         </div>
         {showButton && (
           <button className={styles.playPauseButton} onClick={handlePlayPause}>

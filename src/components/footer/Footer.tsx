@@ -40,6 +40,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
+      
       <div className={styles.main_container}>
         <div className={styles.logo_container}>
           <Logo />

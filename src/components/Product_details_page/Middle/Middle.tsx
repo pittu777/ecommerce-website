@@ -4,6 +4,7 @@ import MidLeft from './MidLeft/MidLeft'
 import MidRight from './MidRight/MidRight'
 
 const Middle = () => {
+  
   return (
     <div className='Middle'>
       <div className='MidL'>

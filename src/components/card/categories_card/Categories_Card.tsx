@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./c.module.css";
+import SectionDivider from '../../section_divider/SectionDivder';
 
 interface CategoriesProps {
   images: string[],
@@ -9,21 +10,20 @@ interface CategoriesProps {
 const Categories_Card: React.FC<CategoriesProps> = ({ images, des }) => {
   return (
     <div>
-      <div className={styles.container}>
-        <hr />
-        <span className={styles.heading}>Categories</span>
-        <hr />
-      </div>
-      <ul className={styles.imageList}>
+     
+       <div>
+            <SectionDivider heading='Categories'/>
+          </div>
+      <div className={styles.imageList}>
         {images.map((image, index) => (
-          <li key={index}>
+          <div className={styles.li} key={index}>
             <figure>
               <img className={styles.categoryImage} src={image} alt={`Category ${index + 1}`} />
             <p className={styles.p}>{des[index]}</p>
             </figure>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   )
 };

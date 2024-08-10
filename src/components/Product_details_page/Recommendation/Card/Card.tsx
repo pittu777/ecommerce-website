@@ -32,4 +32,4 @@ const Card = ({img} : Cardprops) => {
   )
 }
 
-export default Card
+export default Card;

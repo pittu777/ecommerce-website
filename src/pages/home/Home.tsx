@@ -3,7 +3,7 @@ import Hero from '../../components/hero/Hero';
 
 import heroImg from "./../../assets/sellers/bedroom-5664221.jpg";
 
-import Content from '../../components/content/Content';
+import Content from '../../components/home_content/Content';
 import Navbar from '../../components/nav-bar/Navbar';
 import Header from '../../components/header/Header';
 const Home: React.FC = () => {

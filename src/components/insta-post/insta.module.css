@@ -182,7 +182,7 @@
     padding: 10px;
     color: white;
     font-size: 14px;
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
     border-top-left-radius: 10px; /* Rounded corners for top overlay */
     border-top-right-radius: 10px; /* Rounded corners for top overlay */
     pointer-events: all;

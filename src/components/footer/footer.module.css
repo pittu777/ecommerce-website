@@ -407,11 +407,16 @@ body {
   }
   .features_container {
     grid-template-columns: 1fr;
+    
   }
 
   .feature_item {
     grid-template-columns: auto 1fr;
   }
+  .feature_item p{
+    font-size: 1rem;
+  }
+
 
   .feature_item img {
     margin-right: 10px;

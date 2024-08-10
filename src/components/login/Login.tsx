@@ -9,7 +9,7 @@ const Login = () => {
     <div className={styles.container}>
       <div className={styles.mainDiv}>
         <div className={styles.leftSide}>
-          <h3 className={styles.title}>Raja's Chanab</h3>
+          <h3 className={styles.title}>Raja's Handlooms</h3>
           <h1 className={styles.header}>Login now</h1>
           <p className={styles.welcomeText}>Hi, Welcome back</p>
           <button className={styles.googleLoginButton}>

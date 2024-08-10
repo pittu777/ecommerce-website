@@ -8,21 +8,42 @@
   
   .container {
     display: flex;
-    place-items: center;
-    justify-content: center;
     align-items: center;
-    gap: 1vw;
-    
-    
-    
-    
+    justify-content: center;
+    /* border: 1px solid black; */
   }
-  .container hr{
+  
+.heading {
+  position: relative;
+  padding: 0 20px;
+}
+
+.heading::before,
+.heading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 1px;
+  background-color: black;
+}
+
+.heading::before {
+  left: -350px;
+}
+
+.heading::after {
+  right: -350px;
+}
+  
+  /* .container hr{
     width: 30%;
     height: 0.2vw;
     color: black;
     background-color: black;
-  }
+  } */
+   
   .p{
     text-align: center;
     margin-top: 10px;
@@ -58,7 +79,7 @@
     
   }
   
-  .imageList li {
+  .imageList .li {
     list-style: none;
     width: 80%;
     border-radius: 10px;
@@ -131,9 +152,30 @@
   
   @media (max-width: 767.98px) {
 
+    
     .heading {
-      font-size: 1.5rem;
-      
+      position: relative;
+      padding: 0 20px;
+      /* font-size: 1.5rem; */
+    }
+    
+    .heading::before,
+    .heading::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 200px;
+      height: 1px;
+      background-color: black;
+    }
+    
+    .heading::before {
+      left: -200px;
+    }
+    
+    .heading::after {
+      right: -200px;
     }
   
     
@@ -175,12 +217,31 @@
   
   
   @media (max-width: 575.98px) {
-    .container{
+    /* .container{
       border-top: 1px solid black;
-    }
+    } */
     .heading {
       font-size: 1.2rem;
-      
+    }
+    
+    
+    .heading::before,
+    .heading::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100px;
+      height: 1px;
+      background-color: black;
+    }
+    
+    .heading::before {
+      left: -100px;
+    }
+    
+    .heading::after {
+      right: -100px;
     }
   
     .imageList {

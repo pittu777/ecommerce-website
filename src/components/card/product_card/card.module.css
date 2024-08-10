@@ -28,9 +28,11 @@
   margin: 10px auto;
 }
 
-.imageList li {
+.imageList .li {
+  /* border: 1px solid black; */
   list-style: none;
   width: 100%;
+  max-height: 100%;
   border-radius: 10px;
   text-align: start;
   display: grid;
@@ -40,7 +42,14 @@
   font-style: normal;
   font-size: 1rem;
 }
-
+.li{
+  text-decoration: none;
+  color: inherit;
+}
+.li:hover{
+  color: inherit;
+  text-decoration: none;
+}
 .img {
   cursor: pointer;
   width: 100%;
@@ -74,7 +83,7 @@
 .stars {
   justify-self: start;
   font-family: "Poppins", sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
   font-size: 1rem;
 }
@@ -85,6 +94,13 @@
   font-style: normal;
   font-size: 1rem;
 }
+.filledStar {
+  color: #F2DA06;
+}
+/* 
+.outlinedStar {
+  color: lightgray;
+} */
 
 .card button {
   justify-self: center;
@@ -117,12 +133,14 @@
 @media (max-width: 991.98px) {
   .imageList {
     grid-template-columns: repeat(2, 1fr);
+    
   }
+  
 
   .card_p {
     font-size: 0.9rem;
     color: #424242;
-    font-weight: normal;
+    font-weight: bold;
   }
   .card_price {
     font-size: 0.9rem;
@@ -133,7 +151,7 @@
   .img {
     cursor: pointer;
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     border-radius: 10px;
     justify-self: start;
   }
@@ -214,7 +232,7 @@
 
   .card_p {
     font-size: 0.8rem;
-    font-weight: normal;
+    font-weight: bold;
   }
   .card_price {
     font-size: 0.8rem;
@@ -275,6 +293,7 @@
   .card_p {
     font-size: 0.8rem;
     font-weight: normal;
+    font-weight: bold;
   }
   .card_price {
     font-size: 0.8rem;
